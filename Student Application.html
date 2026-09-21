@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subject Master</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+        }
+        table{
+            width:50%;
+            margin:30px auto;
+            border-collapse:collapse;
+            background:white;
+            border:2px solid black;
+        }
+        th{
+            background-color:#4CAF50;
+            color:white;
+            font-size:22px;
+            padding:10px;
+        }
+        td{
+            border:1px solid black;
+            padding:10px;
+        }
+        input, select{
+            width:95%;
+            padding:6px;
+        }
+        .buttons{
+            text-align:center;
+        }
+        input[type=submit], input[type=reset]{
+            width:100px;
+            padding:8px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+<table>
+    <tr>
+        <th colspan="2">Subject Master</th>
+    </tr>
+
+    <tr>
+        <td>Subject Code</td>
+        <td><input type="text" name="scode" required></td>
+    </tr>
+
+    <tr>
+        <td>Subject Name</td>
+        <td><input type="text" name="sname" required></td>
+    </tr>
+
+    <tr>
+        <td>Department</td>
+        <td>
+            <select>
+                <option>--Select Department--</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Semester</td>
+        <td>
+            <select>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Credits</td>
+        <td><input type="number" name="credits"></td>
+    </tr>
+
+    <tr>
+        <td>Faculty Name</td>
+        <td><input type="text" name="faculty"></td>
+    </tr>
+
+    <tr>
+        <td class="buttons" colspan="2">
+            <input type="submit" value="Save">
+            <input type="reset" value="Clear">
+        </td>
+    </tr>
+</table>
+</form>
+
+</body>
+</html>

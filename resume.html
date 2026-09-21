@@ -1,0 +1,227 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Atkinson - Profile</title>
+    <!-- Google Fonts for typography matching -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            background-color: #0d82ca;
+            box-shadow:  10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            height: 380px;
+            background: linear-gradient(to bottom, rgba(30, 45, 60, 0.4), rgba(15, 25, 35, 0.7)),
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-style: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #d0e4f7;
+        }
+
+        /* --- AT A GLANCE SECTION --- */
+        .at-a-glance {
+            background-color: #0c7bbd;
+            padding: 35px 40px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            gap: 25px 20px;
+        }
+
+        .info-card {
+            border-left: 3px solid #00aaff;
+            padding-left: 12px;
+        }
+
+
+        /* --- ABOUT ME SECTION --- */
+        .about-me {
+            padding: 40px;
+            background-color: red;
+        }
+
+        .about-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .about-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 28px;
+            background-color: red;
+        }
+
+        .about-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #e0f2fe;
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+
+        .about-text strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* --- QUOTE SECTION --- */
+        .quote-box {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .quote-icon {
+            font-size: 3.5rem;
+            line-height: 1;
+            color: #53b4ed;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .quote-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: #ffffff;
+        }
+
+        /* Responsive scaling for mobile devices */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .quote-text {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header class="hero">
+            <h1>Jonathan Atkinson</h1>
+            <p>UX Specialist</p>
+        </header>
+
+        <!-- At A Glance Grid -->
+        <section class="at-a-glance">
+            <h2 class="section-title">At a Glance</h2>
+            <div class="grid">
+                <div class="info-card">
+                    <div class="label">Full Name</div>
+                    <div class="value">Bruce "the bat" Wayne</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Birthplace</div>
+                    <div class="value">Lancashire, England</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Born</div>
+                    <div class="value">1970</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Residence</div>
+                    <div class="value">Mechanicsburg, OH</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Education</div>
+                    <div class="value">BS, MS, MBA</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Hobbies</div>
+                    <div class="value">Television, Movies, Art</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.  Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum.
+            </p>
+
+            <!-- Quote Block -->
+            <div class="quote-box">
+                <span class="quote-icon">&ldquo;&ldquo;</span>
+                <p class="quote-text">
+                    I wish to expand my skills on a daily basis with the help of an employee-focused company.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

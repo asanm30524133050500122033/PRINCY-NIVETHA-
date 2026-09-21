@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        /* Form Table Container */
+        table {
+            border-collapse: collapse;
+            background-color: #fff;
+            width: 550px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            border: 1px solid #777;
+            padding: 10px 15px;
+            vertical-align: middle;
+        }
+
+        td:first-child {
+            width: 35%;
+            font-weight: normal;
+            color: #222;
+        }
+
+        /* Input Controls Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #888;
+            border-radius: 2px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Submit / Reset Section */
+        .button-row {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            margin: 0 5px;
+            background-color: #e9e9e9;
+            border: 1px solid #777;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Department Registration Form</h2>
+
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" placeholder="Enter Name" required></td>
+            </tr>
+            <tr>
+                <td>Register Number</td>
+                <td><input type="text" placeholder="Enter Register Number" required></td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>
+                    <select required>
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="CSE">Computer Science</option>
+                        <option value="ECE">Electronics & Communication</option>
+                        <option value="EEE">Electrical & Electronics</option>
+                        <option value="MECH">Mechanical Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td>
+                    <select required>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td>
+                    <select required>
+                        <option value="1st semester">1st semester</option>
+                        <option value="2nd semester">2nd semester</option>
+                        <option value="3rd semester">3rd semester</option>
+                        <option value="4th semester">4th semester</option>
+                        <option value="5th semester">5th semester</option>
+                        <option value="6th semester">6th semester</option>
+                        <option value="7th semester">7th semester</option>
+                        <option value="8th semester">8th semester</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="Enter Email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" placeholder="Enter Phone Number" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button-row">
+                    <button type="submit" class="btn">Register</button>
+                    <button type="reset" class="btn">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

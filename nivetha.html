@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRINCY WORKPAGE</title>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: white;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border: 4px solid black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .header h1 {
+            font-size: 32px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        /* About Section */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 2px solid black;
+        }
+
+        .about-box {
+            padding: 20px;
+            min-height: 180px;
+        }
+
+        .about-box:first-child {
+            border-right: 2px solid black;
+        }
+
+        .about-box h2 {
+            margin-bottom: 10px;
+        }
+
+        .about-box p {
+            line-height: 1.6;
+        }
+
+        /* Qualification */
+        .qualification {
+            padding: 20px;
+        }
+
+        .qualification h2 {
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            background: #eaeaea9c;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body bgcolor="white" style="color:black;">
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header"style="background-color:pink;">
+
+            <h1>A.Princy</h1>
+
+            <div class="profile-box">
+                <img src="C:\Users\acer\Downloads\WhatsApp Image 2026-06-29 at 9.17.02 AM.jpeg"alt="Profile Image" class="profile-img">
+            </div>
+
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+
+            <div class="about-box">
+                <h2>About</h2>
+
+                <p>
+                    I am a Computer Science student interested in Web Development,
+                    Database Management, Software Engineering, and Front-End
+                    Technologies. I enjoy learning new programming languages and
+                    building responsive websites.
+                </p>
+
+            </div>
+
+            <div class="about-box">
+
+                <h2>Skills</h2>
+
+                <p>
+                    • HTML <br><br>
+                    • CSS <br><br>
+                    • JavaScript <br><br>
+                    • React <br><br>
+                    • Node.js <br><br>
+                    • MySQL
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Qualification -->
+        <div class="qualification">
+
+            <h2>Qualification</h2>
+
+            <table>
+
+                <tr>
+                    <th>Education</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>SSLC (10th)</td>
+                    <td>Carmel Higher Secondery School</td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <td>HSC (12th)</td>
+                    <td>Carmel Higher Secondary School</td>
+                    <td>2022</td>
+                </tr>
+
+                <tr>
+                    <td>BCA</td>
+                    <td>Immaculate College For Women</td>
+                    <td>2025</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

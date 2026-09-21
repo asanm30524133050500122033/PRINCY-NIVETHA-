@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Output</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .product {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #111827;
+        }
+
+        .price {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        .result {
+            background: #111827;
+            color: #22c55e;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+
+        .array {
+            background: #111827;
+            color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>JavaScript Array Output</h1>
+
+    <div class="box">
+        <h2>Products Array</h2>
+        <div id="products"></div>
+    </div>
+
+    <div class="box">
+        <h2>Array Methods Output</h2>
+
+        <p><b>Original Array:</b></p>
+        <div class="array" id="original"></div>
+
+        <p style="margin-top:15px;"><b>product("Headphones"):</b></p>
+        <div class="result" id="find"></div>
+
+        <p style="margin-top:15px;"><b>product.unshift("Tab"):</b></p>
+        <div class="result" id="unshift"></div>
+
+        <p style="margin-top:15px;"><b>product.shift():</b></p>
+        <div class="result" id="shift"></div>
+
+        <p style="margin-top:15px;"><b>product.slice(2):</b></p>
+        <div class="result" id="slice"></div>
+    </div>
+
+</div>
+
+
+<script>
+
+    // Screenshot 1 - Products
+    let products = [
+        { name: "Vivo", price: 25000 },
+        { name: "Samsung", price: 30000 },
+        { name: "iPhone", price: 50000 },
+        { name: "OnePlus", price: 35000 },
+        { name: "Realme", price: 18000 }
+    ];
+
+    let productDiv = document.getElementById("products");
+
+    products.forEach(function(product) {
+        productDiv.innerHTML += `
+            <div class="product">
+                <div class="name">${product.name}</div>
+                <div class="price">₹${product.price}</div>
+            </div>
+        `;
+    });
+
+
+    // Screenshot 2 - Array methods
+    let product = [
+        "Laptop",
+        "Mobile",
+        "Headphones",
+        "Keyboard",
+        "Mouse"
+    ];
+
+    document.getElementById("original").innerText =
+        JSON.stringify(product);
+
+
+    // find / includes
+    document.getElementById("find").innerText =
+        product.includes("Headphones");
+
+
+    // unshift
+    product.unshift("Tab");
+
+    document.getElementById("unshift").innerText =
+        JSON.stringify(product);
+
+
+    // shift
+    let removed = product.shift();
+
+    document.getElementById("shift").innerText =
+        removed;
+
+
+    // slice
+    let sliced = product.slice(2);
+
+    document.getElementById("slice").innerText =
+        JSON.stringify(sliced);
+
+</script>
+
+</body>
+</html>
